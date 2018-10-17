@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*
+                                              HEADER
+*/
+
+header{
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+.logo{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 56px;
+    margin-left: 12%;
+    letter-spacing: 15px;
+}
+
+
+nav{
+    margin-top: 56px;
+    margin-left: 29%;
+}
+
+.navBar a{
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navBar a:hover{
+    border-bottom: 3px solid #fcac45;
+}
+
+.navBar .icon{
+    display: none;
+}
+
+
+
+
+/*
+                                    MAIN
+*/
+
+
+
+
+.introBlock {
+    position: relative;
+    width: 50%;
+    margin: auto;
+}
+
+.imageIntro {
+  opacity: 1;
+  /*display: block;*/
+  /*width: 100%;*/
+  /*height: auto;*/
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.buttonToPlay {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.introBlock:hover .imageIntro {
+  opacity: 0.3;
+}
+
+.introBlock:hover .buttonToPlay {
+  opacity: 1;
+}
+
+.textButton {  
+  color: white;  
+  font-size: 35px;
+  padding: 16px 32px;
+  text-transform: uppercase;
+}
+.mainWelcome a{
+    text-decoration: none;
+}
+.mainWelcome a:visited{
+    color: white;
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+main .mainWelcome{
+    background: black;
+    text-align: center;
+    padding: 100px 0px 100px 0;
+
+}
+
+
+
+main .mainWelcome p{
+    margin-bottom: 60px;
+    color: #999999;
+    font-size: 20px;
+}
+
+main .mainWelcome h1{
+    color: #999999;
+    font-size: 44px;
+}
+main .mainWelcome h1::after{
+   display: none;
+}
+.myGame{
+    color: #fcac45;
+}
+
+
+
+
+
+
+
+
+.mainTeam{
+    text-transform: uppercase;
+    background: black;
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+    color: white;
+}
+
+.mainTeam h1{
+    font-size: 44px;
+    padding-bottom: 30px;
+}
+
+.teamCards{    
+    
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.photo{ 
+    margin: 20px auto;
+}
+.sum1{
+    width: auto;
+     height: 125px;
+}
+
+.fullBlock, .brain, .direction{
+    width: auto;
+    height: 125px;
+}
+
+.name{
+    margin: 30px 0px 15px 0px;
+    font-size: 20px;
+}
+
+
+.aboutPosition{
+    font-size: 14px;
+}
+
+.card{    
+    text-align: center;    
+    margin: 0px 20px;
+}
+
+
+
+
+/*
+                                        GALERRY
+
+*/
+
+
+
+.container{
+    width: 100%;
+    margin: 30px auto;
+    overflow: hidden;
+    display: flex;    
+     
+}
+
+.container {    
+    float: left;
+    width: 100%;
+     
+}
+.container .galleryCard{
+    margin: 2% 2% 10px 2%; 
+}
+
+.container  img{
+    max-width: 100%;
+    height: auto;
+        
+}
+
+.mainWork{
+    text-align: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.mainWork h1{    
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+.mainWork p{
+    margin-bottom: 60px;
+    color: #6c6c6c;
+}
+
+.mainWork img{
+    box-shadow: 0 4px 8px 0 rgba(54, 54, 54, 0.2), 0 6px 20px 0 rgba(54, 54, 54, 0.2);
+}
+.mainWork img:hover{
+    opacity: 0.8;
+
+}
+
+
+
+
+
+
+
+
+.wrapper{
+    width: 86%;
+    margin: 0 auto;
+}
+
+main .mainAbout{    
+    padding: 100px 0px 100px 0px;   
+}
+
+main .mainAbout h1{
+    text-align: center;   
+    font-size: 44px;
+    margin-bottom: 30px;
+}
+
+
+.aboutRight{
+    margin-left: 215px;    
+} 
+
+.mainAboutMe{
+    display: flex;
+    margin: 0px 20px;
+}
+
+.aboutRight p{
+    
+    padding: 30px 0px 50px 0px;
+    color: #6c6c6c;
+}
+.aboutRight ul{
+    padding-left: 5px;    
+    list-style-type: none;    
+}
+.aboutRight li{
+    margin-top: 10px;
+}
+
+.imageWrapperSize{ 
+    
+    width: 325px;
+    height: 325px;
+    border-radius: 50%;
+
+}
+
+
+
+h1:after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding-top: 30px;
+    border-bottom: 3px solid  #fcac45;    
+}
+
+/*                  
+                                                        FOOTER
+*/
+
+footer{
+    width: 100%;
+    height: auto;
+    background: black;
+    padding: 30px 0px 30px 0px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 0px;
+}
+.social img{
+    margin-left: 15px;
+}
+
+.social img:hover{
+    opacity: 0.8;
+}
+
+
+
+/*
+                                                        MEDIA
+*/
+
+
+/*@media screen and (max-width:940px){
+.container ul .flower  {
+    width: 46%;
+    height: auto;
+}
+.container ul .years{
+    width: 46%;
+    height: auto;
+}
+.container ul .sun{
+    width: 96%;
+    height: auto;
+}*/
+
+/*
+}
+
+@media screen and (max-width:720px){
+    
+    
+    .container ul .flower  {
+        width: 100%;
+        height: auto;
+    }
+    .container ul .years{
+        width: 100%;
+        height: auto;
+    }
+    .container ul .sun{
+        width: 100%;
+        height: auto;
+    }
+   
+}
+*/
+
+
+
+
+@media screen and (max-width:1200px){
+    nav{
+        margin-left: 20%;
+    }
+    
+}
+
+@media screen and (max-width:1105px){
+    nav{
+        margin-left: 10%;
+    }
+    
+}
+@media screen and (max-width:1025px){
+    .name{        
+        font-size: 15px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:1010px){
+    
+    .container{                     
+        flex-direction: column;
+        margin: auto;
+        float: left;
+        width: 100%;
+        
+    }
+    .container .galleryCard{
+        margin: 5% 2% 10px 2%;
+    }
+    
+
+    
+    
+    header{        
+        flex-direction: column;
+        float:right;
+    }
+
+    nav{
+        margin: auto;
+        margin-top: 16px;        
+    }
+    
+    .logo{
+        width: auto;
+        height: auto;
+        text-align: center;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 800;
+        font-size: 35px;
+        cursor: pointer;
+        margin: auto;
+        margin-top: 56px;        
+        letter-spacing: 15px;
+    }
+    
+    .navBar a{
+        display: none;
+        font-size: 30px;        
+    }
+
+    .navBar a.icon{ 
+
+        align-items: center;        
+        display: block;
+        color: white;
+        font-size: 40px;
+    } 
+
+    .navBar.responsive a{        
+        display: block;       
+    }    
+
+    main .mainWelcome{
+        padding: 50px 0px 50px 0px;
+    }
+    main .mainWelcome p{
+        font-size: 14px;
+    }
+    main .mainWelcome h1{
+        font-size: 30px;
+    }
+
+
+    main .mainAboutMe{
+        display: flex;
+        padding: 5px 0px 50px 0px;       
+    }
+
+    .aboutLeft{
+        
+        display: flex;
+        margin-bottom: 30px;
+        
+    }
+    .mainAboutMe{
+        
+        flex-direction: column;
+    }
+
+    .aboutRight{        
+        text-align: center;
+        margin-left: 0px;
+    }
+    .aboutRight li{
+        
+        text-align: center;
+    }
+
+    main .mainAbout h1{
+        text-align: center;
+        
+    }
+    
+    
+
+    .aboutRight ul{   
+             
+        padding: 30px 0px 20px 0px;
+        color: #5a5a5a;
+    }
+
+    .teamCards{
+        flex-direction: column;
+    }
+    
+    .aboutRight p{
+    
+        padding: 15px 0px 9px 0px;
+        color: #6c6c6c;
+    }
+
+    main .mainAbout{    
+        padding: 50px 0px 10px 0px;       
+    }
+
+    .name{
+        margin: 2px 0px 15px 0px;
+        font-size: 40px;
+    }
+    .card{
+        margin: 0px 20px;
+        
+    }
+    .photo{ 
+        margin-top: 60px;
+    }
+
+
+    
+  
+    
+    .photo{ 
+        margin: 50px auto;
+    }
+    .sum1{
+        width: auto;
+         height: 185px;
+    }
+    
+    .fullBlock, .brain, .direction{
+        width: auto;
+        height: 185px;
+    } 
+
+}
+
+@media screen and (max-width:1010px){
+    .logo{
+        font-size: 55px;
+    }
+    
+    .navBar a.icon{
+        font-size: 65px;
+    }
+    
+    .navBar a{
+        font-size: 40px;
+    }
+    
+}
+
+
+
+
+
+
+
